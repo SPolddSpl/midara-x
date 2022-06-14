@@ -23,6 +23,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import About from "./components/About/";
 import HeaderLinks from "./components/HeaderLinks";
 import Parts from "./components/Parts";
+import Contacts from "./components/Contacts";
 
 const drawerWidth = 240;
 
@@ -153,6 +154,7 @@ function App() {
         <Routes>
           <Route path="*" element={<Parts />} />
           <Route path="/parts" element={<Parts />} />
+          <Route path="/contacts" element={<Contacts />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </Box>

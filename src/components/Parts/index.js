@@ -8,14 +8,22 @@ import {
   Typography,
 } from "@mui/material";
 import PartsList from "./PartsList";
+import TopParts from "./TopParts";
+import db from '../../db.json';
 
 export default function Parts() {
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
+  const [category, setCategory] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  const handleCategoryChange = (value) => {
+    setCategory(value);
+  };
+
 
   const handleChangeIndex = (index) => {
     setValue(index);
@@ -36,10 +44,10 @@ export default function Parts() {
         <Tab label="Топ комплектующих" {...a11yProps(1)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        <PartsList />
+        <PartsList category={category} parts={db.parts} categories={db.categories} categoryChange={handleCategoryChange}/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <TopParts category={category} categoryName={db.categories[category].name} parts={db.parts} />
       </TabPanel>
     </>
   );

@@ -9,13 +9,12 @@ import {
 } from "@mui/material";
 import React from "react";
 import PartCard from "../PartCard";
-import db from "../../../db.json";
 
-export default function PartsList() {
-  const [category, setCategory] = React.useState(0);
+export default function PartsList({parts, categories, categoryChange, category}) {
+
 
   const handleChange = (event) => {
-    setCategory(event.target.value);
+    categoryChange(event.target.value)
   };
   return (
     <>
@@ -28,7 +27,7 @@ export default function PartsList() {
           label="Категории"
           onChange={handleChange}
         >
-          {db.categories.map((category) => {
+          {categories.map((category) => {
             return (
               <MenuItem key={category.id} value={category.id}>
                 {category.name}
@@ -37,16 +36,16 @@ export default function PartsList() {
           })}
         </Select>
       </FormControl>
-      {db.categories[category].description ? (
+      {categories[category].description ? (
         <Paper sx={{ padding: "1em", marginTop: "2em" }}>
-          <Typography>{db.categories[category].description}</Typography>
+          <Typography>{categories[category].description}</Typography>
         </Paper>
       ) : (
         ""
       )}
 
       <Grid container spacing={2} sx={{ paddingTop: "2em" }}>
-        {db.parts
+        {parts
           .filter((p) => p.categoryId === category)
           .map((i) => {
             return (

@@ -4,38 +4,249 @@
             "id": 0,
             "name": "AMD Ryzen 5 5600G",
             "description": "Сокет AM4 \n Максимальное число потоков 12 \n Количество производительных ядер 6 \n Ядро AMD Cezanne \n Тип памяти DDR4 \n Количество каналов 2",
-            "img": "./assets/img/r55600.png",
+            "img": "/assets/img/r55600.png",
             "categoryId": 0
         },
         {
             "id": 1,
-            "name": "Name",
-            "description": "asd",
-            "img": "./assets/img/1.jpg",
+            "name": "Intel Core i9-12900K",
+            "description": "Сокет LGA 1700 \n Максимальное число потоков 24 \n Количество производительных ядер 8 \n Ядро Intel Alder Lake-S \n Тип памяти DDR4, DDR5 \n Количество каналов 2",
+            "img": "/assets/img/i9-12900k.png",
             "categoryId": 0
         },
         {
             "id": 2,
-            "name": "Name",
-            "description": "asd",
-            "img": "./assets/img/1.jpg",
+            "name": "AMD Ryzen 9 5950X",
+            "description": "Сокет AM4 \n Максимальное число потоков 32 \n Количество производительных ядер 16 \n Ядро AMD Vermeer \n Тип памяти DDR4 \n Количество каналов 2",
+            "img": "/assets/img/r95950x.png",
             "categoryId": 0
         },
         {
             "id": 3,
-            "name": "Name",
-            "description": "asd",
-            "img": "./assets/img/1.jpg",
+            "name": "Intel Core i5 12400F",
+            "description": "Сокет LGA 1700 \n Максимальное число потоков 12 \n Количество производительных ядер 6 \n Ядро Intel Alder Lake-S \n Тип памяти DDR4, DDR5 \n Количество каналов 2",
+            "img": "/assets/img/i5-12400f.png",
             "categoryId": 0
         },
         {
             "id": 4,
-            "name": "Name",
-            "description": "asd",
-            "img": "./assets/img/1.jpg",
+            "name": "AMD Ryzen 7 5800X3D",
+            "description": "Сокет AM4 \n Максимальное число потоков 16 \n Количество производительных ядер 8 \n Ядро AMD Vermeer \n Тип памяти DDR4 \n Количество каналов 2",
+            "img": "/assets/img/r75800.png",
             "categoryId": 0
+        },
+        {
+            "id": 0,
+            "name": "Corsair Vengeance LPX",
+            "description": "Тип памяти DDR4 \n Тактовая частота 2666 МГц \n Форм-фактор памяти DIMM \n CAS Latency 16",
+            "img": "/assets/img/corvengeance.png",
+            "categoryId": 1
+        },
+        {
+            "id": 1,
+            "name": "Kingston HyperX Predator",
+            "description": "Тип памяти DDR4 \n Тактовая частота 4600 МГц \n Форм-фактор памяти DIMM \n CAS Latency 19",
+            "img": "/assets/img/kinghypepred.png",
+            "categoryId": 1
+        },
+        {
+            "id": 2,
+            "name": "G.Skill TRIDENT Z Neo",
+            "description": "Тип памяти DDR4 \n Тактовая частота 3200 МГц \n Форм-фактор памяти DIMM \n CAS Latency 16",
+            "img": "/assets/img/gskillzneo.png",
+            "categoryId": 1
+        },
+        {
+            "id": 3,
+            "name": "Crucial Ballistix Black",
+            "description": "Тип памяти DDR4 \n Тактовая частота 3200 МГц \n Форм-фактор памяти DIMM \n CAS Latency 16",
+            "img": "/assets/img/cruballistix.png",
+            "categoryId": 1
+        },
+        {
+            "id": 4,
+            "name": "G.Skill Trident Z Royal Elite",
+            "description": "Тип памяти DDR4 \n Тактовая частота 4000 МГц \n Форм-фактор памяти DIMM \n CAS Latency 18",
+            "img": "/assets/img/gskillzroyal.png",
+            "categoryId": 1
+        }, 
+        {
+            "id": 0,
+            "name": "MSI MAG B550 TOMAHAWK",
+            "description": "Форм-фактор Standard-ATX \n Тип поддерживаемой памяти DDR4 \n Сокет AM4 \n Чипсет AMD AMD B550 \n Количество слотов памяти 4 \n Количество каналов памяти 2 \n Максимальный объем памяти 128 ГБ \n Максимальная частота памяти 3200 МГц",
+            "img": "/assets/img/msitomahawk.png",
+            "categoryId": 2
+        },
+        {
+            "id": 1,
+            "name": "GIGABYTE Z690 GAMING",
+            "description": "Форм-фактор Standard-ATX \n Тип поддерживаемой памяти DDR4 \n Сокет LGA 1700 \n Чипсет Intel Intel Z690 \n Количество слотов памяти 4 \n Количество каналов памяти 2 \n Максимальный объем памяти 128 ГБ \n Максимальная частота памяти 3200 МГц",
+            "img": "/assets/img/gigz690.png",
+            "categoryId": 2
+        },
+        {
+            "id": 2,
+            "name": "GIGABYTE B550 AORUS ELITE V2",
+            "description": "Форм-фактор Standard-ATX \n Тип поддерживаемой памяти DDR4 \n Сокет AM4 \n Чипсет AMD AMD B550 \n Количество слотов памяти 4 \n Количество каналов памяти 2 \n Максимальный объем памяти 128 ГБ \n Максимальная частота памяти 3200 МГц",
+            "img": "/assets/img/gigaorus.png",
+            "categoryId": 2
+        },
+        {
+            "id": 3,
+            "name": "ASUS ROG STRIX B550-E GAMING",
+            "description": "Форм-фактор Standard-ATX \n Тип поддерживаемой памяти DDR4 \n Сокет AM4 \n Чипсет AMD AMD B550 \n Количество слотов памяти 4 \n Количество каналов памяти 2 \n Максимальный объем памяти 128 ГБ \n Максимальная частота памяти 3200 МГц",
+            "img": "/assets/img/asusrog.png",
+            "categoryId": 2
+        },
+        {
+            "id": 4,
+            "name": "ASUS PRIME Z690-A",
+            "description": "Форм-фактор Standard-ATX \n Тип поддерживаемой памяти DDR5 \n Сокет LGA 1700 \n Чипсет Intel Intel Z690 \n Количество слотов памяти 4 \n Количество каналов памяти 2 \n Максимальный объем памяти 128 ГБ \n Максимальная частота памяти 4800 МГц",
+            "img": "/assets/img/asusprime.png",
+            "categoryId": 2
+        },
+        {
+            "id": 0,
+            "name": "be quiet! Pure Power 11",
+            "description": "Форм-фактор ATX \n Номинальная мощность 700 вт \n Система охлаждения Активная \n Мощность по линии 12 В 672 Вт \n Количество разъемов SATA 6 \n 80 PLUS Gold",
+            "img": "/assets/img/beqpurepow.png",
+            "categoryId": 3
+        },
+        {
+            "id": 1,
+            "name": "ZALMAN ARX",
+            "description": "Форм-фактор ATX \n Номинальная мощность 1000 вт \n Система охлаждения Полупассивная \n Мощность по линии 12 В 996 Вт \n Количество разъемов SATA 12 \n 80 PLUS Platinum",
+            "img": "/assets/img/zalmanarx.png",
+            "categoryId": 3
+        },
+        {
+            "id": 2,
+            "name": "AeroCool KCAS PLUS",
+            "description": "Форм-фактор ATX \n Номинальная мощность 600 вт \n Система охлаждения Активная \n Мощность по линии 12 В 600 Вт \n Количество разъемов SATA 7 \n 80 PLUS Bronze",
+            "img": "/assets/img/aerocoolkcas.png",
+            "categoryId": 3
+        },
+        {
+            "id": 3,
+            "name": "Corsair TX750M",
+            "description": "Форм-фактор ATX \n Номинальная мощность 750 вт \n Система охлаждения Активная \n Мощность по линии 12 В 744 Вт \n Количество разъемов SATA 7 \n 80 PLUS Gold",
+            "img": "/assets/img/corsairtx750m.png",
+            "categoryId": 3
+        },
+        {
+            "id": 4,
+            "name": "Thermaltake Smart PRO",
+            "description": "Форм-фактор ATX \n Номинальная мощность 750 вт \n Система охлаждения Полупассивная \n Мощность по линии 12 В 750 Вт \n Количество разъемов SATA 9 \n 80 PLUS Bronze",
+            "img": "/assets/img/thermalsmartpro.png",
+            "categoryId": 3
+        },
+        {
+            "id": 0,
+            "name": "Palit GeForce RTX 3070 Ti GamingPro",
+            "description": "Объем видеопамяти 8 ГБ \n Тип памяти GDDR6X \n Видеоразъемы DisplayPort x3, HDMI \n Рекомендуемый блок питания 700 Вт \n Тип охлаждения Активное воздушное",
+            "img": "/assets/img/palitrtx3070ti.png",
+            "categoryId": 4
+        },
+        {
+            "id": 1,
+            "name": "MSI GeForce RTX 3060 GAMING X",
+            "description": "Объем видеопамяти 12 ГБ \n Тип памяти GDDR6 \n Видеоразъемы DisplayPort x3, HDMI \n Рекомендуемый блок питания 550 Вт \n Тип охлаждения Активное воздушное",
+            "img": "/assets/img/msirtx3060.png",
+            "categoryId": 4
+        },
+        {
+            "id": 2,
+            "name": "Palit GeForce RTX 3060 Ti DUAL",
+            "description": "Объем видеопамяти 8 ГБ \n Тип памяти GDDR6 \n Видеоразъемы DisplayPort x3, HDMI \n Рекомендуемый блок питания 550 Вт \n Тип охлаждения Активное воздушное",
+            "img": "/assets/img/palit3060.png",
+            "categoryId": 4
+        },
+        {
+            "id": 3,
+            "name": "Sapphire AMD Radeon RX 6600 XT PULSE GAMING OC",
+            "description": "Объем видеопамяти 8 ГБ \n Тип памяти GDDR6 \n Видеоразъемы DisplayPort x3, HDMI \n Рекомендуемый блок питания 550 Вт \n Тип охлаждения Активное воздушное",
+            "img": "/assets/img/sapphire6600.png",
+            "categoryId": 4
+        },
+        {
+            "id": 4,
+            "name": "GIGABYTE GeForce RTX 3050 GAMING OC",
+            "description": "Объем видеопамяти 8 ГБ \n Тип памяти GDDR6 \n Видеоразъемы DisplayPort x2, HDMI x2 \n Рекомендуемый блок питания 450 Вт \n Тип охлаждения Активное воздушное",
+            "img": "/assets/img/geforcertx3050.png",
+            "categoryId": 4
+        },
+        {
+            "id": 0,
+            "name": "Seagate IronWolf",
+            "description": "Среднее время задержки 5.1 мс \n Максимальное энергопотребление 4.8 Вт \n Максимальная рабочая температура 65 °C \n Объем кэш-памяти 64 МБ",
+            "img": "/assets/img/seaironwolf.png",
+            "categoryId": 5
+        },
+        {
+            "id": 1,
+            "name": "Samsung 970 EVO Plus",
+            "description": "Форм-фактор 2280 \n Количество бит на ячейку 3 бит MLC \n Энергопотребление 9 Вт \n Аппаратное шифрование данных Есть",
+            "img": "/assets/img/samsung.png",
+            "categoryId": 5
+        },
+        {
+            "id": 2,
+            "name": "WD Blue",
+            "description": "Среднее время задержки 4.2  мс \n Максимальное энергопотребление 6.8 Вт \n Максимальная рабочая температура 60 °C \n Объем кэш-памяти 64 МБ",
+            "img": "/assets/img/wdblue.png",
+            "categoryId": 5
+        },
+        {
+            "id": 3,
+            "name": "Seagate BarraCuda",
+            "description": "Среднее время задержки 6 мс \n Максимальное энергопотребление 3.7 Вт \n Максимальная рабочая температура 60 °C \n Объем кэш-памяти 256 МБ",
+            "img": "/assets/img/seabarracuda.png",
+            "categoryId": 5
+        },
+        {
+            "id": 4,
+            "name": "Corsair Force Series MP510",
+            "description": "Форм-фактор 2280 \n Количество бит на ячейку 3 бит TLC \n Энергопотребление 7.1 Вт \n Аппаратное шифрование данных Есть",
+            "img": "/assets/img/corsair.png",
+            "categoryId": 5
+        },
+        {
+            "id": 0,
+            "name": "be quiet! DARK ROCK PRO 4",
+            "description": "Рассеиваемая мощность 250 Вт \n Количество тепловых трубок 7 \n Номинальный ток 0.08 А \n Максимальная скорость вращения 1500 об/мин",
+            "img": "/assets/img/beqdarkrock.png",
+            "categoryId": 6
+        },
+        {
+            "id": 1,
+            "name": "Noctua NH-D15 chromax.black",
+            "description": "Рассеиваемая мощность 183 Вт \n Количество тепловых трубок 6 \n Номинальный ток 0.21 А \n Максимальная скорость вращения 1500 об/мин",
+            "img": "/assets/img/noctua.png",
+            "categoryId": 6
+        },
+        {
+            "id": 2,
+            "name": "DEEPCOOL AS500",
+            "description": "Рассеиваемая мощность 220 Вт \n Количество тепловых трубок 5 \n Номинальный ток 0.11 А \n Максимальная скорость вращения 1200 об/мин",
+            "img": "/assets/img/deepcoolas.png",
+            "categoryId": 6
+        },
+        {
+            "id": 3,
+            "name": "ID-COOLING SE-224-XT Basic",
+            "description": "Рассеиваемая мощность 180 Вт \n Количество тепловых трубок 4 \n Номинальный ток 0.2 А \n Максимальная скорость вращения 1800 об/мин",
+            "img": "/assets/img/idcooling.png",
+            "categoryId": 6
+        },
+        {
+            "id": 4,
+            "name": "Arctic Cooling Freezer 34 eSports DUO",
+            "description": "Рассеиваемая мощность 210 Вт \n Количество тепловых трубок 4 \n Номинальный ток 0.26 А \n Максимальная скорость вращения 2100 об/мин",
+            "img": "/assets/img/arcticcooling.png",
+            "categoryId": 6
         }
     ],
+
     "categories": [
         {
             "id": 0,
@@ -44,15 +255,33 @@
         },
         {
             "id": 1,
-            "name": "ОЗУ"
+            "name": "ОЗУ",
+            "description": "Оперативная память (RAM) — быстрая энергозависимая память компьютера с произвольным доступом, в которой осуществляются большинство операций обмена данными между устройствами. Является хранилищем всех потоков информации, которые необходимо обработать процессору или же они дожидаются в оперативной памяти своей очереди. Оперативная память передаёт процессору данные непосредственно, либо через кэш-память. Каждая ячейка оперативной памяти имеет свой индивидуальный адрес."
         },
         {
             "id": 2,
-            "name": "Материнские платы"
+            "name": "Материнские платы",
+            "description": "Материнская плата - многослойная печатная плата, к которой подключаются все элементы компьютера. Основная задача материнской платы - объединение и обеспечение совместной работы всех комплектующих компьютера. Она состоит из: чипсета, BIOS и батарейки CMOS памяти, сокета, слота PCI и PCI Express, гнезд под ОЗУ, SATA, M2, IDE портов, внешних разъемов и входов для запитывания."
         },
         {
             "id": 3,
-            "name": "Блоки питания"
+            "name": "Блоки питания",
+            "description": "Блок питания – источник питания в системном блоке, который отвечает за обеспечение энергией остальных компонентов. Также препятствует потере информации с персонального компьютера, предотвращая скачки энергии.            "
+        },
+        {   
+            "id": 4,
+            "name": "Видеокарты",
+            "description": "Видеокарта – важная и сложная часть компьютера, в ее задачу входит обработка информации и вывод изображения на экран монитора. Отвечает за плавный игровой процесс, работу с графическими и видеоредакторами и многое другое. Видеокарты состоят из собственного процессора, кулера, оперативной памяти."  
+        },
+        { 
+            "id": 5,
+            "name": "Устройства хранения данных",
+            "description": "Устройство хранения данных - часть вычислительной машины, физическое устройство или среда для хранения данных, используемых в вычислениях, в течение определённого времени."
+        },
+        {
+            "id": 6,
+            "name": "Кулеры",
+            "description": "Кулер - устройство, состоящее из вентилятора и радиатора, использующееся для охлаждения процессора, блока питания и видеокарты, а также вывода горячего воздуха из корпуса настольного компьютера, сервера или ноутбука."
         }
     ]
 }
