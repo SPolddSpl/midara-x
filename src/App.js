@@ -122,7 +122,7 @@ function App() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Mini variant drawer
+            Midara-X
           </Typography>
         </Toolbar>
       </AppBar>
