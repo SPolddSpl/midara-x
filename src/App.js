@@ -1,12 +1,10 @@
-import logo from "./logo.svg";
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MuiDrawer from "@mui/material/Drawer";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import List from "@mui/material/List";
 import CssBaseline from "@mui/material/CssBaseline";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
@@ -14,13 +12,6 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
-import About from "./components/About/";
 import HeaderLinks from "./components/HeaderLinks";
 import Parts from "./components/Parts";
 import Contacts from "./components/Contacts";
@@ -53,7 +44,6 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   alignItems: "center",
   justifyContent: "flex-end",
   padding: theme.spacing(0, 1),
-  // necessary for content to be below app bar
   ...theme.mixins.toolbar,
 }));
 
@@ -94,6 +84,8 @@ const Drawer = styled(MuiDrawer, {
 
 function App() {
   const theme = useTheme();
+
+  const location = useLocation();
   const [open, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {
@@ -103,6 +95,10 @@ function App() {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+
+  useEffect(() => {
+    document.title = location.pathname.split("/")[1] ?? "Hello World";
+  }, [location]);
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -121,9 +117,6 @@ function App() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Midara-X
-          </Typography>
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open}>
@@ -155,7 +148,6 @@ function App() {
           <Route path="*" element={<Parts />} />
           <Route path="/parts" element={<Parts />} />
           <Route path="/contacts" element={<Contacts />} />
-          <Route path="/about" element={<About />} />
         </Routes>
       </Box>
     </Box>

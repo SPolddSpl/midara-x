@@ -18,11 +18,6 @@ const links = [
     icon: <HexagonOutlined />,
     routeName: "/contacts",
   },
-  {
-    name: "Обо мне",
-    icon: <HexagonOutlined />,
-    routeName: "/about",
-  },
 ];
 
 export default function HeaderLinks() {

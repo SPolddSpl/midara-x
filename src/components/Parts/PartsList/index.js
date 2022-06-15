@@ -10,11 +10,14 @@ import {
 import React from "react";
 import PartCard from "../PartCard";
 
-export default function PartsList({parts, categories, categoryChange, category}) {
-
-
+export default function PartsList({
+  parts,
+  categories,
+  categoryChange,
+  category,
+}) {
   const handleChange = (event) => {
-    categoryChange(event.target.value)
+    categoryChange(event.target.value);
   };
   return (
     <>
@@ -44,12 +47,19 @@ export default function PartsList({parts, categories, categoryChange, category})
         ""
       )}
 
-      <Grid container spacing={2} sx={{ paddingTop: "2em" }}>
+      <Grid
+        container
+        rowSpacing={2}
+        columns={{ xs: 4, sm: 8, md: 12, lg: 12 }}
+        justifyContent="center"
+        columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+        sx={{ paddingTop: "2em" }}
+      >
         {parts
           .filter((p) => p.categoryId === category)
           .map((i) => {
             return (
-              <Grid item xs={6} md={4} key={i.id}>
+              <Grid item key={i.id}>
                 <PartCard {...i} />
               </Grid>
             );

@@ -6,10 +6,13 @@ import {
   SwipeableViews,
   useTheme,
   Typography,
+  Paper,
+  Divider,
 } from "@mui/material";
 import PartsList from "./PartsList";
 import TopParts from "./TopParts";
-import db from '../../db.json';
+import db from "../../db.json";
+import MapLinks from "../MapLinks";
 
 export default function Parts() {
   const theme = useTheme();
@@ -23,7 +26,6 @@ export default function Parts() {
   const handleCategoryChange = (value) => {
     setCategory(value);
   };
-
 
   const handleChangeIndex = (index) => {
     setValue(index);
@@ -44,10 +46,33 @@ export default function Parts() {
         <Tab label="Топ комплектующих" {...a11yProps(1)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        <PartsList category={category} parts={db.parts} categories={db.categories} categoryChange={handleCategoryChange}/>
+        <PartsList
+          category={category}
+          parts={db.parts}
+          categories={db.categories}
+          categoryChange={handleCategoryChange}
+        />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <TopParts category={category} categoryName={db.categories[category].name} parts={db.parts} />
+        <TopParts
+          category={category}
+          categoryName={db.categories[category].name}
+          parts={db.parts}
+        />
+        <Typography sx={{ paddingTop: "1em" }} variant="h2" align="center">
+          Магазины
+        </Typography>
+        <Divider />
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "1em",
+          }}
+        >
+          <MapLinks />
+        </Box>
       </TabPanel>
     </>
   );
